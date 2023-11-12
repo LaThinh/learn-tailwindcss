@@ -6,26 +6,8 @@ export default function MiniProjectPage() {
   return (
     <div className="w-full min-h-[80vh] bg-blue-100 p-3 lg:p-5">
       <div className="w-full mx-auto max-w-7xl border border-blue-400 min-h-screen rounded-xl">
-        <h1 className="tailwind-title">Tailwind CSS Mini Project</h1>
+        <h1 className="tailwind-title">Mini Project</h1>
         <div className="grid grid-cols-1 p-5 lg:grid-cols-2 gap-8 child:border bg-white">
-          <div className="project">
-            <h2 className="project-title">Tailwind Css</h2>
-            <div className="project-content">
-              <Link
-                href="/tailwind/09-filters"
-                className="block overflow-hidden w-full h-[360px]"
-              >
-                <Image
-                  src="/assets/images/tailwind-css.png"
-                  width="600"
-                  height="300"
-                  alt="Login Modal"
-                  className="object-cover w-full h-[360px] hover:scale-110 transition-all duration-500"
-                />
-              </Link>
-            </div>
-          </div>
-
           <div className="project">
             <h2 className="project-title">Project 01: Email Subscribe Card</h2>
             <div className="project-content">
@@ -113,6 +95,11 @@ export default function MiniProjectPage() {
                 />
               </Link>
             </div>
+          </div>
+
+          <div className="project">
+            <h2>Project 01: </h2>
+            <div className="project-content"></div>
           </div>
         </div>
       </div>
