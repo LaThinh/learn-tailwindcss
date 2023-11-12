@@ -14,17 +14,29 @@ module.exports = {
       },
 
       animation: {
-        'spin-slow': 'spin 3s linear infinite',
+        'spin-slow': "spin 3s linear infinite",
+        "text": "text 5s ease infinite",
         // 'wiggle': 'wiggle 1s ease-in-out infinite',
       },
 
       keyframes: {
-        wiggle: {
-          '0%, 100%': {
-            transform: 'rotate(-12deg)'
+        // wiggle: {
+        //   '0%, 100%': {
+        //     transform: 'rotate(-12deg)'
+        //   },
+        //   '50%': { transform: 'rotate(12deg)' }
+        // },
+
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
           },
-          '50%': { transform: 'rotate(12deg)' }
-        }
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
       }
     },
 

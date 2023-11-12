@@ -48,9 +48,14 @@ body {
 }
 
 .project {
-  @apply p-0 rounded-xl overflow-hidden;
+  @apply p-0 rounded-xl overflow-hidden hover:shadow-md;
 }
 
 .project-title {
   @apply px-6 py-4 text-2xl text-blue-500 text-center font-bold bg-blue-100;
+}
+
+.text-gradient {
+  @apply animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 
+  bg-clip-text text-transparent text-2xl lg:text-4xl;
 }

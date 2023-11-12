@@ -35,13 +35,19 @@ export default function Header(props: IHeaderProps) {
           </Link>
           <nav className="nav flex flex-row list-none gap-10">
             {menus.map((item, index) => (
-              <li key={index}>
+              <li key={index} className="group relative">
                 <Link
-                  className="text-black text-[18px] hover:text-green-500  font-semibold"
+                  className="text-black text-[18px] hover:text-blue-500 font-semibold"
                   href={item.url}
                 >
                   {item.name}
                 </Link>
+                <div
+                  className="border duration-300 w-0 border-b-2 absolute 
+                  -bottom-1 opacity-0 left-[50%] border-blue-600 -translate-x-[50%]
+                  group-hover:opacity-100 group-hover:w-full
+                  "
+                ></div>
               </li>
             ))}
           </nav>
