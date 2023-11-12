@@ -10,10 +10,10 @@ export default function TailwindBreakpoint() {
 
   useEffect(() => {
     showBrowserWidth;
+    window.onload = showBrowserWidth;
+    window.onresize = showBrowserWidth;
   }, []);
 
-  window.onload = showBrowserWidth;
-  window.onresize = showBrowserWidth;
   return (
     <div className="">
       <h1 className="tailwind-title">TailwindBreakpoint</h1>
