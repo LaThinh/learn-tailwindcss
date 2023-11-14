@@ -37,6 +37,13 @@ module.exports = {
             "background-position": "right center",
           },
         },
+      },
+
+      colors: {
+        strongCyan: 'hsl(171, 66%, 44%)',
+        lightBlue: 'hsl(233, 100%, 69%)',
+        darkGrayishBlue: 'hsl(210, 10%, 33%)',
+        grayishBlue: 'hsl(201, 11%, 66%)',
       }
     },
 
@@ -45,7 +52,8 @@ module.exports = {
       serif: ['Tapestry', 'Georgia'],
       mono: ['ui-monospace', 'SFMono-Regular'],
       Mulish: ['Mulish', 'sans-serif'],
-      Rokkitt: ['Rokkitt', 'monospace']
+      Rokkitt: ['Rokkitt', 'monospace'],
+      BaiJam: ['Bai Jamjuree', 'sans-serif'],
     }
 
   },

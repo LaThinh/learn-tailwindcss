@@ -9,6 +9,7 @@ const menus = [
   // { name: "Home", url: "/home" },
   { name: "TailWind CSS", url: "/tailwind/09-filters" },
   { name: "Mini Project", url: "/mini-project" },
+  { name: "Clipboard", url: "/clipboard" },
 ];
 export default function Header(props: IHeaderProps) {
   return (

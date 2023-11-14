@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tapestry&family=Bai+Jamjuree:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -58,4 +59,33 @@ body {
 .text-gradient {
   @apply animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 
   bg-clip-text text-transparent text-2xl lg:text-4xl;
+}
+
+/* CSS for Clipboard LandingPage */
+section#hero {
+  /* background-image: url("@/clipboard/images/bg-header-desktop.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.section-container {
+  @apply max-w-6xl w-full mx-auto text-center px-10;
+}
+
+.section-content {
+  @apply max-w-4xl mx-auto font-BaiJam leading-9 text-center text-2xl text-grayishBlue;
+}
+
+.section-title {
+  @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl font-BaiJam;
+}
+
+.button-container {
+  @apply flex max-w-xl mx-auto flex-col justify-center w-full gap-6
+  md:flex-row font-bold text-white;
+}
+
+.fill-icon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
 }
